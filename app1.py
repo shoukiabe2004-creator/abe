@@ -8,8 +8,10 @@ st.write(name)
 
 st.checkbox("同意します")
 
-address=st.selectbox("次の中から現住所を教えて",["京都府","大阪府"])
+address=st.selectbox("次の中から現住所を教えてください",["京都府","大阪府"])
 st.write(address)
+
+st.multiselect("趣味を選択してください",["映画","音楽","散歩"])
 
 camera = st.camera_input("写真を撮影します！")
 if camera:
