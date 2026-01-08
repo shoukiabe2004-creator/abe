@@ -147,4 +147,4 @@ def generate_image(outfit, gender):
 
     # Body shape
     if gender == "Male":
-        body = [(60, 100), (200, 100), (215, 280]()
+        body = [(60, 100), (200, 100), (215, 280)]
