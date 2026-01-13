@@ -49,8 +49,8 @@ div.stButton > button {
 # DATA
 # ==============================================================================
 class StyleConfig:
-    GENRES = ["streetwear", "casual", "Minimal", "Techwear", "Vintage", "Formal"]
-    COLORS = ["black", "White", "Gray", "Navy", "Brown", "Beige", "green", "Red"]
+    GENRES = ["streetwear", "casual", "minimal", "Techwear", "Vintage", "Formal"]
+    COLORS = ["black", "white", "Gray", "Navy", "Brown", "beige", "green", "Red"]
 
 # ==============================================================================
 # IMAGE RECOMMENDER
