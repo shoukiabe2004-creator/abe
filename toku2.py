@@ -27,7 +27,7 @@ html, body, [class*="css"] {
 # DATA DEFINITIONS
 # ==============================================================================
 class StyleConfig:
-    GENRES = ["Streetwear", "Casual", "Minimal", "Techwear", "Vintage", "Formal"]
+    GENRES = ["streetwear", "casual", "Minimal", "Techwear", "Vintage", "Formal"]
     COLORS = ["Black", "White", "Gray", "Navy", "Brown", "Beige", "Green", "Red"]
 
 # ==============================================================================
@@ -56,11 +56,11 @@ def sidebar_controls():
     with st.sidebar:
         st.header("⚙️ Configure Persona")
 
-        gender = st.selectbox("Gender", ["Male", "Female"])
+        gender = st.selectbox("Gender", ["male", "female"])
         genres = st.multiselect(
             "Favorite Styles",
             StyleConfig.GENRES,
-            default=["Casual"]
+            default=["casual"]
         )
 
         if st.button("✨ Generate Collection"):
@@ -87,7 +87,7 @@ def main():
         # ★ AI画像フォルダ切り替え部分
         # ===============================
         image_root = "ai_images"
-        gender_folder = "male" if gender == "Male" else "female"
+        gender_folder = "male" if gender == "male" else "female"
         image_path = os.path.join(image_root, gender_folder)
 
         st.subheader("Recommended Outfit")
