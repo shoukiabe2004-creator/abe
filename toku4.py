@@ -100,7 +100,7 @@ def sidebar_controls():
         colors = st.multiselect(
             "Select Colors (multiple)",
             StyleConfig.COLORS,
-            default=["black", "Beige"]
+            default=["black", "beige"]
         )
 
         st.divider()
